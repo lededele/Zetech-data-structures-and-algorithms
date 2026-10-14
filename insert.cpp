@@ -4,15 +4,10 @@ using namespace std;
 int main() {
     int arr[10] = {10, 20, 30, 40, 50};
     int size = 5;
-    int pos = 2;      // Insert at index 2
-    int value = 25;
+    int value = 60;
 
-    // Shift elements to the right
-    for (int i = size; i > pos; i--) {
-        arr[i] = arr[i - 1];
-    }
-
-    arr[pos] = value;
+    // Insert at the rear of the queue
+    arr[size] = value;
     size++;
 
     cout << "After insertion:\n";
